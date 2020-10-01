@@ -6,7 +6,7 @@ import * as firebase from "firebase/app";
 import { FirestoreProvider } from "@react-firebase/firestore";
 import "firebase/firestore";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <FirestoreProvider {...config} firebase={firebase}>
@@ -27,6 +27,6 @@ function App() {
       </FirestoreProvider>
     </div>
   );
-}
+};
 
 export default App;
